@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <script>
+                var num1 = parseFloat(prompt("Digite o primeiro número:"))
+                var sinal = prompt('informe o sinal da sua operação');
+                var num2 = parseFloat(prompt("Digite o segundo número:"));
+
+                while(sinal != '+' && sinal != '-' && sinal != '*' && sinal != '/'){
+                    alert('Por favor informe um sinal válido!');
+                    var sinal = prompt('informe o sinal da sua operação');
+                }
+
+                var resultado = 0;
+                if(sinal == '+'){
+                    resultado = num1 + num2;
+                } else if(sinal == '-'){
+                    resultado = num1 - num2;
+                } else if(sinal == '*'){
+                    resultado = num1 * num2;
+                } else if(sinal == '/'){
+                    resultado = num1 / num2;
+                }
+                alert('O resultado da operação é: ' + resultado);
+        </script>
+
+    </body>
+
+</html>

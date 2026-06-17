@@ -1,0 +1,44 @@
+<html>
+    <body>
+        <script>
+            class Animal{
+                constructor(nome){
+                    this.nome = nome;
+                }
+
+                printNome(){
+                    return this.nome;
+                }
+            }
+
+            animal = new Animal('gato');
+
+            //chama a funcao printNome que esta dentro da classe animal
+            alert(animal.printNome());
+
+
+            //criada a classe cachorro e está herdando os atributos da classe animal
+            class Cachorro extends Animal{
+                constructor(nome,raca){
+            //Invocando o construtor da classe pai, no caso os atributos da classe animal
+                    super(nome);
+                    this.raca = raca;
+                }
+
+                  printRaca(){
+                   return this.raca;
+                }
+            }
+
+            //passa o nome do cachorro como Maltes
+            cachorro = new Cachorro("Maltes","pet");
+
+          
+            //chama a funcao que esta dentro da classe animal, porém com os atributos da classe cachorro
+            alert(cachorro.printNome());
+            alert(cachorro.printRaca());
+
+
+        </script>
+    </body>
+</html>

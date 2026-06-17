@@ -1,0 +1,41 @@
+<html>
+<body>
+    <script>
+      
+     //funções
+
+     function testes(){
+        console.log("Função chamada");
+     }
+
+        testes();
+
+
+    function cadastro(nome,idade,email){
+        console.log("Nome: "+nome);
+        console.log("Idade: "+idade);
+        console.log("Email: "+email);
+        console.log("-----------------------");
+    }
+
+    cadastro("Kaio", 19, "kaio@gmail.com");
+    cadastro("Amim", 20, "amim@gmail.com");
+
+    // FUNÇÃO COM PARAMETRO E RETORNO
+    function pegarNome(parametro){
+        if(parametro == 1){
+            return "Kaio";
+        }
+        else{
+            return "Outro Nome";
+        }  
+      }
+
+    var nome = pegarNome(2);
+    console.log(nome);
+
+
+    </script>
+
+</body>
+</html>

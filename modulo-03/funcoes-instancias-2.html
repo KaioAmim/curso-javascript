@@ -1,0 +1,52 @@
+<html>
+    <body>
+        <script>
+            //criando classe pessoa
+            function Pessoa(){
+                //definindo os atributos
+                this.nome = "Kaio";
+                this.idade = 19;
+                
+                //criando funcao printNome
+                this.printNome = function(){
+                   
+                   //pega a variavel this.nome -> Kaio
+                    alert(this.nome);
+                }
+            }
+
+            var pessoa = new Pessoa();
+
+
+
+            //Outro Exemplo
+            function Animal(nome,raca){
+                this.nome = "cachorro";
+                this.raca = "pastor alemao";
+
+                /*
+                if(nome == undefined){
+                    nome = 'Cachorro';
+                }
+                */
+
+                //criando funcao returnAnimal
+                this.returnAnimal = function(animal){
+                
+            //retorna oq for enviado ao chamar a function animal
+                    return animal;
+                }
+            }
+
+            var animal = new Animal();
+            
+            //puxa o nome que esta atribuido na function animal
+            alert(animal.returnAnimal(animal).nome);
+            
+            //puxa a raca q esta atribuida na function animal
+            alert(animal.returnAnimal(animal).raca);
+
+        </script>
+    </body>
+
+</html>

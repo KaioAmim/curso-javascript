@@ -1,0 +1,83 @@
+<htm>
+    <style>
+        .conteudo h2 span{
+            cursor: pointer;
+            font-size:13px;
+        }
+        .conteudo p{
+            height:2px;
+            overflow:hidden;
+            transition: 1s;
+        }
+
+        .mostrar{
+            height:200px !important;
+        }
+    </style>
+    <body>
+        <div class="conteudo">
+         <h2>Titulo do conteúdo <span>Ver mais!</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante odio, consequat eget ultricies vitae, ultrices vel sapien. Nam non vulputate felis, at lobortis tellus. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis quis ex est. Phasellus felis urna, pretium non leo sed, rhoncus venenatis risus. Fusce sit amet justo eget augue tempor convallis. Sed eu dui quam. Nulla facilisi. Etiam a nisl vitae nulla facilisis condimentum eu sed tellus. Integer id magna posuere orci tincidunt finibus vel et felis. Integer eget tristique urna. Quisque tempor, metus quis accumsan faucibus, eros risus tempor metus, id consequat metus quam sit amet magna.
+        </p>
+        </div>
+
+
+          <div class="conteudo">
+         <h2>Titulo do conteúdo <span>Ver mais!</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante odio, consequat eget ultricies vitae, ultrices vel sapien. Nam non vulputate felis, at lobortis tellus. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis quis ex est. Phasellus felis urna, pretium non leo sed, rhoncus venenatis risus. Fusce sit amet justo eget augue tempor convallis. Sed eu dui quam. Nulla facilisi. Etiam a nisl vitae nulla facilisis condimentum eu sed tellus. Integer id magna posuere orci tincidunt finibus vel et felis. Integer eget tristique urna. Quisque tempor, metus quis accumsan faucibus, eros risus tempor metus, id consequat metus quam sit amet magna.
+        </p>
+        </div>
+
+
+          <div class="conteudo">
+         <h2>Titulo do conteúdo <span>Ver mais!</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante odio, consequat eget ultricies vitae, ultrices vel sapien. Nam non vulputate felis, at lobortis tellus. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis quis ex est. Phasellus felis urna, pretium non leo sed, rhoncus venenatis risus. Fusce sit amet justo eget augue tempor convallis. Sed eu dui quam. Nulla facilisi. Etiam a nisl vitae nulla facilisis condimentum eu sed tellus. Integer id magna posuere orci tincidunt finibus vel et felis. Integer eget tristique urna. Quisque tempor, metus quis accumsan faucibus, eros risus tempor metus, id consequat metus quam sit amet magna.
+        </p>
+        </div>
+    </body>
+
+    <script>
+
+        var span = document.querySelector('.conteudo span');
+
+        document.querySelectorAll('.conteudo span')[0]
+        .addEventListener('click', function(){
+            var conteudo = document.querySelectorAll('.conteudo p')[0];
+            
+            if(conteudo.classList.contains('mostrar')){
+                span.innerHTML = 'Ver mais!';
+                conteudo.classList.remove('mostrar');
+            } else {
+                span.innerHTML = 'Ver menos!';
+                conteudo.classList.add('mostrar');
+            }
+        });
+
+
+        document.querySelectorAll('.conteudo span')[1].addEventListener('click', function(){
+            var conteudo = document.querySelectorAll('.conteudo p')[1];
+            
+            if(conteudo.classList.contains('mostrar')){
+                this.innerHTML = 'Ver mais!';
+                conteudo.classList.remove('mostrar');
+            } else {
+                this.innerHTML = 'Ver menos!';
+                conteudo.classList.add('mostrar');
+            }
+        });
+
+             document.querySelectorAll('.conteudo span')[2].addEventListener('click', function(){
+            var conteudo = document.querySelectorAll('.conteudo p')[2];
+            
+            if(conteudo.classList.contains('mostrar')){
+                this.innerHTML = 'Ver mais!';
+                conteudo.classList.remove('mostrar');
+            } else {
+                this.innerHTML = 'Ver menos!';
+                conteudo.classList.add('mostrar');
+            }
+        });
+        
+    </script>
+    
+</html>

@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <style>
+
+            .animEsquerda{
+                transition: 2s;
+                margin-left:300px;
+            }
+        </style>
+        <div class="box">
+        </div>
+        <script>
+            var box = document.getElementsByClassName("box")
+            {
+                box[0].style.width = "200px";
+                box[0].style.height = "200px";
+                box[0].style.backgroundColor = "red";
+            
+                //transição
+                var box = document.querySelectorAll(".box")[0];
+                /*
+
+                setTimeout(()=>{
+                    box.classList.add("animEsquerda");
+                },1000)
+                */
+
+                box.addEventListener("click",()=>{
+                     box.classList.add("animEsquerda");
+                })
+
+              
+            }
+        </script>
+    </body>
+</html>

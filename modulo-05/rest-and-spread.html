@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <script>
+
+            //spread
+                var nomes = [
+                    {
+                        nome: 'Kaio',
+                    },
+                    {
+                        nome: 'Amim',
+                    }
+                    ];
+
+                
+                var objetos = [...nomes,{
+                    nome: 'Nunes',
+                }];
+
+                console.log(objetos);
+                
+                //rest
+                function testes(...numeros){
+                    console.log(numeros[0][2],numeros[1][2]);
+                }
+
+                testes([1,2,3,4,5,6,7,8,9],[10,20,30,40,50,60,70,80,90]);
+        </script>
+    </body> 
+</html>
